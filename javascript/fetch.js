@@ -11,5 +11,6 @@ function fetchClickHandler() {
     .then((res) => res.json())
     .then(({ joke }) => {
       outputTwo.innerHTML = joke;
-    });
+    })
+    .catch((e) => console.log("there has been an error: ", e));
 }
